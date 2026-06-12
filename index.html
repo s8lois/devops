@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DevOps Academy</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #f4f7fb;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, #0f172a, #2563eb);
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 42px;
+      margin-bottom: 15px;
+    }
+
+    header p {
+      font-size: 18px;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    nav {
+      background: #0f172a;
+      padding: 15px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #60a5fa;
+    }
+
+    section {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 25px;
+      margin-bottom: 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+    }
+
+    h2 {
+      color: #1d4ed8;
+      margin-bottom: 20px;
+    }
+
+    h3 {
+      margin-bottom: 10px;
+      color: #0f172a;
+    }
+
+    .badge {
+      display: inline-block;
+      background: #dbeafe;
+      color: #1d4ed8;
+      padding: 6px 12px;
+      border-radius: 20px;
+      margin-bottom: 10px;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    code {
+      background: #111827;
+      color: #22c55e;
+      padding: 3px 6px;
+      border-radius: 5px;
+    }
+
+    pre {
+      background: #111827;
+      color: #22c55e;
+      padding: 20px;
+      border-radius: 10px;
+      overflow-x: auto;
+      margin-top: 15px;
+    }
+
+    .btn {
+      background: #2563eb;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-top: 15px;
+      font-size: 16px;
+    }
+
+    .btn:hover {
+      background: #1e40af;
+    }
+
+    .quiz-option {
+      display: block;
+      background: #e5e7eb;
+      padding: 12px;
+      margin: 10px 0;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    .quiz-option:hover {
+      background: #bfdbfe;
+    }
+
+    #quiz-result {
+      font-weight: bold;
+      margin-top: 15px;
+    }
+
+    footer {
+      background: #0f172a;
+      color: white;
+      text-align: center;
+      padding: 25px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>DevOps Academy</h1>
+    <p>Learn Linux, Git, Docker, CI/CD, Cloud and Kubernetes from beginner to professional level.</p>
+  </header>
+
+  <nav>
+    <a href="#intro">Intro</a>
+    <a href="#modules">Modules</a>
+    <a href="#commands">Commands</a>
+    <a href="#quiz">Quiz</a>
+    <a href="#project">Project</a>
+  </nav>
+
+  <section id="intro">
+    <div class="card">
+      <span class="badge">What is DevOps?</span>
+      <h2>Introduction to DevOps</h2>
+      <p>
+        DevOps is a way of working that connects developers and operations teams.
+        The goal is to build, test, deploy and monitor applications faster and more reliably.
+      </p>
+
+      <p>
+        A DevOps engineer uses tools like Linux, Git, Docker, Jenkins, GitHub Actions,
+        Kubernetes, AWS, monitoring tools and automation scripts.
+      </p>
+    </div>
+  </section>
+
+  <section id="modules">
+    <h2>DevOps Learning Modules</h2>
+
+    <div class="grid">
+      <div class="card">
+        <span class="badge">Module 1</span>
+        <h3>Linux Basics</h3>
+        <p>Learn files, folders, permissions, users, processes and terminal commands.</p>
+      </div>
+
+      <div class="card">
+        <span class="badge">Module 2</span>
+        <h3>Git and GitHub</h3>
+        <p>Learn version control, commit, branch, merge, pull request and collaboration.</p>
+      </div>
+
+      <div class="card">
+        <span class="badge">Module 3</span>
+        <h3>Docker</h3>
+        <p>Learn images, containers, Dockerfile, ports, volumes and Docker Hub.</p>
+      </div>
+
+      <div class="card">
+        <span class="badge">Module 4</span>
+        <h3>CI/CD</h3>
+        <p>Automate build, test and deployment using GitHub Actions or Jenkins.</p>
+      </div>
+
+      <div class="card">
+        <span class="badge">Module 5</span>
+        <h3>Kubernetes</h3>
+        <p>Orchestrate containers using pods, deployments, services and clusters.</p>
+      </div>
+
+      <div class="card">
+        <span class="badge">Module 6</span>
+        <h3>Cloud</h3>
+        <p>Deploy applications on AWS, Azure or Google Cloud.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="commands">
+    <div class="card">
+      <h2>Important DevOps Commands</h2>
+
+      <h3>Linux</h3>
+      <pre>
+ls
+pwd
+cd folder-name
+mkdir project
+touch file.txt
+chmod +x script.sh
+sudo apt update
+      </pre>
+
+      <h3>Git</h3>
+      <pre>
+git init
+git status
+git add .
+git commit -m "first commit"
+git branch
+git push origin main
+      </pre>
+
+      <h3>Docker</h3>
+      <pre>
+docker build -t my-app .
+docker run -d -p 8080:80 my-app
+docker ps
+docker images
+docker stop container-name
+docker push username/my-app
+      </pre>
+    </div>
+  </section>
+
+  <section id="quiz">
+    <div class="card">
+      <h2>DevOps Quiz</h2>
+      <p id="question">What does Docker create from an image?</p>
+
+      <div class="quiz-option" onclick="checkAnswer('wrong')">A virtual machine</div>
+      <div class="quiz-option" onclick="checkAnswer('correct')">A container</div>
+      <div class="quiz-option" onclick="checkAnswer('wrong')">A Git repository</div>
+      <div class="quiz-option" onclick="checkAnswer('wrong')">A Linux user</div>
+
+      <p id="quiz-result"></p>
+    </div>
+  </section>
+
+  <section id="project">
+    <div class="card">
+      <h2>Final DevOps Practice Project</h2>
+      <p>
+        Your mission is to containerize this HTML application using Docker,
+        push it to GitHub, build a Docker image, run it locally, then push the image to Docker Hub.
+      </p>
+
+      <h3>Expected DevOps Flow</h3>
+      <pre>
+CODE → GIT COMMIT → DOCKER BUILD → DOCKER RUN → DOCKER PUSH → DEPLOY
+      </pre>
+
+      <button class="btn" onclick="showProject()">Show Dockerfile Example</button>
+
+      <pre id="dockerfile" style="display:none;">
+FROM nginx:latest
+COPY . /usr/share/nginx/html
+EXPOSE 80
+CMD ["nginx", "-g", "daemon off;"]
+      </pre>
+    </div>
+  </section>
+
+  <footer>
+    <p>DevOps Academy © 2026 | Learn. Build. Deploy.</p>
+  </footer>
+
+  <script>
+    function checkAnswer(answer) {
+      const result = document.getElementById("quiz-result");
+
+      if (answer === "correct") {
+        result.style.color = "green";
+        result.textContent = "Correct! Docker creates a container from an image.";
+      } else {
+        result.style.color = "red";
+        result.textContent = "Incorrect. Try again.";
+      }
+    }
+
+    function showProject() {
+      const dockerfile = document.getElementById("dockerfile");
+      dockerfile.style.display = "block";
+    }
+  </script>
+
+</body>
+</html>
